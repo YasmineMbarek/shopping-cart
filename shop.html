@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title >Shopping Cart</title>
+        <link rel="stylesheet" href="shopcard.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+                
+                      <div class="container blue topBotomBordersOut">
+                        <a>SHOP</a>
+                        <a>SOLD OUT</a>
+                        <a>BLOG</a>
+                        <a>ABOUT</a>
+                        <a>CONTACT</a>
+                      </div>
+               
+                </nav>
+        <main>
+                <div class="shopping-section">
+                        <input type="text" value="Shopping Bag Total" >
+                        <input type="text" value=0 readonly id="price-total" >
+                    </div>
+        <div class="row">
+            <div class="column " id="article1">
+                    <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/11/15/goods-first-img/1512695847585375488.JPG" alt="Blousons" style="width:100%">
+                    <div class="bloc">
+                    <div class="achat">
+                    <i class="far fa-plus-square" id="icon-plus-articale1" onclick="article1 ()"></i>  
+                    <input type="text" value=0 readonly id="nbr-article1" >
+                    <i class="far fa-minus-square" id="icon-minus-article1" onclick="article1min()"></i>   
+                    <i class="fa fa-dollar-sign"></i>
+                    <input type="text" value="20" id="price-article1" readonly> 
+
+                </div>
+                <div class="info">
+                    <span>Blousons </span>
+                    <span>Matières: Coton</span>
+                </div>      
+                <div class="choix">
+                        <i class="fas fa-times" id="icon-times-article1"  onclick="removearticle1()"></i>
+                        <i class="fas fa-heart" id="icon-heart-artical1" onclick="heartarticle1 ()"></i>
+                        </div>
+                </div>
+            </div> 
+            <div class="column" id="article2">
+              <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/10/13/goods-first-img/1510291048653011143.jpg" alt="Blousons " style="width:100%">
+                <div class="bloc">
+              <div class="achat">
+                <i class="far fa-plus-square" id="icon-plus-articale2" onclick="article2() "></i>  
+                <input type="text" value=0 readonly id="nbr-article2">
+                <i class="far fa-minus-square" id="icon-minus-article2" onclick="article2min()"></i> 
+                <i class="fa fa-dollar-sign"></i>
+                <input type="text" value="25" id="price-article2" readonly> 
+            </div>
+                <div class="info">
+                    <span>Blousons </span>
+                    <span>Matières: Jeans </span>
+                </div>
+                <div class="choix">
+              <i class="fas fa-times" id="icon-times-article2" onclick="removearticle2()"></i>
+             <i class="fas fa-heart" id="icon-heart-artical2" onclick="heartarticle2 ()"></i>
+             </div>
+            </div>
+            </div>
+            <div class="column" id="article3">
+              <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2018/09/15/goods-first-img/1540591227068002897.jpg" alt="Blousons" style="width:100%">
+                <div class="bloc">
+              <div class="achat">
+               <i class="far fa-plus-square" id="icon-plus-articale3" onclick="article3() "></i>  
+                <input type="text" value=0 readonly id="nbr-article3">
+                <i class="far fa-minus-square" id="icon-minus-article3" onclick="article3min()"></i> 
+                <i class="fa fa-dollar-sign"></i>
+                <input type="text" value="28" id="price-article3" readonly>       
+
+                </div>
+                <div class="info">
+                <span>Blousons </span>
+                <span>Matières: Jeans </span>
+                </div>
+                <div class="choix">
+              <i class="fas fa-times" id="icon-times-article3" onclick="removearticle3()"></i>
+              <i class="fas fa-heart" id="icon-heart-artical3" onclick="heartarticle3 ()"></i>
+            </div>
+            </div>
+        </div>            
+          </div>
+          <div id="myDIV">
+          <div class="row">
+            <div class="column" id="article4">
+              <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/10/12/goods-first-img/1508873469780369137.jpg" alt=" Pull " style="width:100%">
+              <div class="bloc">
+              <div class="achat">
+                <i class="far fa-plus-square" id="icon-plus-articale4" onclick="article4()"></i>  
+                <input type="text" value=0 readonly id="nbr-article4">
+                <i class="far fa-minus-square" id="icon-minus-article4" onclick="article4min()"></i> 
+                <i class="fa fa-dollar-sign"></i>
+                <input type="text" value="26" id="price-article4" readonly > 
+            </div>
+            <div class="info">
+                <span>Type: Pull  </span>
+                <span>Matières: Acrylique </span>
+            </div>
+            <div class="choix">
+              <i class="fas fa-times" id="icon-times-article4" onclick="removearticle4()"></i>
+              <i class="fas fa-heart" id="icon-heart-artical4" onclick="heartarticle4 ()"></i>
+            </div>
+        </div>
+    </div>
+            <div class="column" id="article5">
+              <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2018/08/27/goods-first-img/1538094549933610148.jpg" alt="Blousons" style="width:100%">
+                <div class="bloc">
+                <div class="achat">
+                <i class="far fa-plus-square" id="icon-plus-articale5" onclick="article5()"></i>  
+                <input type="text" value=0 readonly id="nbr-article5">
+                <i class="far fa-minus-square" id="icon-minus-article5" onclick="article5min()"></i>
+                <i class="fa fa-dollar-sign"></i> 
+                <input type="text" value="30" id="price-article5" readonly>
+                </div>
+                <div class="info">
+                <span>Blousons </span>
+                <span>Matières: Polyester</span>
+                </div>
+                <div class="choix">
+                <i class="fas fa-times" id="icon-times-article5" onclick="removearticle5()"></i>
+                <i class="fas fa-heart" id="icon-heart-artical5" onclick="heartarticle5 ()"></i>
+                </div>
+            </div>
+            </div>
+            <div class="column" id="article6">
+              <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2018/08/28/goods-first-img/1538186668267877652.jpg" alt="Blousons" style="width:100%">
+               <div class="bloc">
+              <div class="achat">
+
+               <i class="far fa-plus-square" id="icon-plus-articale6" onclick="article6()"></i>  
+                <input type="text" value=0 readonly id="nbr-article6" onclick="article6min()">
+                <i class="far fa-minus-square" id="icon-minus-article6"></i> 
+                <i class="fa fa-dollar-sign"></i> 
+                <input type="text" value="32" id="price-article6" readonly >
+            </div> 
+            <div class="info">
+                <span>Blousons </span>
+                <span>Matières: Polyester</span>
+            </div>
+            <div class="choix">
+              <i class="fas fa-times" id="icon-times-article6" onclick="removearticle6()" ></i>
+              <i class="fas fa-heart" id="icon-heart-artical6" onclick="heartarticle6 ()" ></i>
+            </div>
+            </div>
+        </div>
+            
+          </div>
+        </div>
+        <button onclick="myFunction()">show more</button>
+        
+
+        </main>
+<script src="shopcard.js"></script>
+
+    </body>
+</html>
